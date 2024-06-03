@@ -43,6 +43,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-flow: wrap;
 }
 
 .image-container {
@@ -50,10 +51,12 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: wrap;
 }
 
 .info-container {
   flex: 1;
+  min-width: 315px;
 }
 
 .submit {
@@ -70,6 +73,7 @@ h3 {
 
 form {
   text-align: center;
+  margin-bottom: 2vh;
 }
 
 input {
@@ -90,16 +94,20 @@ input {
   color: black;
   display: flex;
   align-items: center;
+  flex-flow: wrap-reverse;
 }
 
 .image {
   border-radius: 100%;
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 20vw;
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .narrative-text {
   flex: 1;
+  min-width: 250px;
 }
 
 .narrative-image {
@@ -110,4 +118,5 @@ input {
 .demo-image {
   width: 200px;
   margin-right: 4px;
+  margin-top: 4px;
 }
