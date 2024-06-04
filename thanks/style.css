@@ -68,6 +68,7 @@ h3 {
   border: 1px solid black;
   padding: 8px 16px;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 form {
@@ -89,14 +90,6 @@ input {
   min-width: 150px;
 }
 
-.narrative {
-  padding: 2vh 8vw;
-  color: black;
-  display: flex;
-  align-items: center;
-  flex-flow: wrap-reverse;
-}
-
 .image {
   border-radius: 100%;
   width: 20vw;
@@ -105,16 +98,52 @@ input {
   min-height: 200px;
 }
 
-.narrative-text {
-  flex: 1;
-  min-width: 250px;
-}
-
-.narrative-image {
-  flex: 1;
-  text-align: center;
-}
-
 .demo-image {
   width: 40vw;
+}
+
+.popup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.popup-content {
+  background-color: rgb(0, 0, 0);
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 8px;
+  padding-bottom: 12px;
+}
+
+h2 {
+  color: #FF69B4;
+}
+
+.prehead {
+  background-color: gray;
+  border-radius: 24px;
+  padding: 4px 24px;
+  display: inline;
+  font-weight: 300;
+}
+
+.about {
+  color: black;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+
+.narriative {
+  width: 50vw;
 }
