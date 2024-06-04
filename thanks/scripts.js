@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 function openPopup() {
-  // document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup").style.display = "flex";
 }
 
 function closePopup() {
