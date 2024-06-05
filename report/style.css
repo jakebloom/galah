@@ -119,3 +119,7 @@ input {
 .demo-image {
   width: 40vw;
 }
+
+#loading-indicator {
+  display: none;
+}

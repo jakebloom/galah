@@ -28,17 +28,15 @@
                     <li>How you can create world beating video ads for cheaper than a cocktail</li>
                 </ul>
                 <h3>This is a limited time offer!</h3>
-                <form>
+                <form onsubmit="onSubmit(event)">
                     <div>
-                        <input type="text" placeholder="Your name" />
+                        <input type="text" name="name" placeholder="Your name" />
                     </div>
                     <div>
-                        <input type="email" placeholder="Email address" />
+                        <input type="email" name="email" placeholder="Email address" />
                     </div>
-                                <button type="submit" class="submit">Get the free report now!</button>
-                            </div>
-                        </div>
-                    </div>
+                    <button id="submit-button" type="submit" class="submit">Get the free report now!</button>
+                    <p id="loading-indicator">Loading...</p>
                 </form>
             </div>
         </div>
@@ -73,5 +71,6 @@
     <footer>
         <p>&copy; 2024 Galah Labs LLC</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

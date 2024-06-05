@@ -33,9 +33,12 @@ async function addToMailchimp(name: string, email: string) {
   logger.info(response);
 }
 
-export const addLead = onRequest(async (req, res) => {
-  const {name, email} = req.body;
-  logger.info(`Adding the following lead: ${name} ${email}`);
-  await addToMailchimp(name, email);
-  res.status(200).send("ok.");
-});
+export const addLead = onRequest(
+  {cors: true},
+  async (req, res) => {
+    const {name, email} = req.body;
+    logger.info(`Adding the following lead: ${name} ${email}`);
+    await addToMailchimp(name, email);
+    res.status(200).send("ok.");
+  },
+);
