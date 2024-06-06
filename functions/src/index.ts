@@ -3,7 +3,7 @@ import * as logger from "firebase-functions/logger";
 
 import * as mailchimp from "@mailchimp/mailchimp_marketing";
 import {defineString} from "firebase-functions/params";
-import { sendEmail } from "./sendEmail";
+import {sendEmail} from "./sendEmail";
 
 const LIST_ID = defineString("MAILCHIMP_LIST_ID");
 const API_KEY = defineString("MAILCHIMP_API_KEY");
@@ -14,7 +14,6 @@ const SERVER = defineString("MAILCHIMP_SERVER");
  * @param {string} name The name of the lead
  * @param {string} email Their email address
  */
-/* @ts-ignore */
 async function addToMailchimp(name: string, email: string) {
   mailchimp.setConfig({
     apiKey: API_KEY.value(),
