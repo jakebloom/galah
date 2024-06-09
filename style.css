@@ -64,7 +64,6 @@ header a {
 .section-title {
   font-size: 2em;
   padding: 20px 0;
-  flex: 1
 }
 .demos {
   margin-top: 20px;
@@ -79,4 +78,10 @@ header a {
 }
 .section-padding {
   flex: 1;
+}
+.avatar {
+  border-radius: 100%;
+}
+.avatar:first-of-type {
+  margin-right: 16px;
 }
