@@ -1,9 +1,6 @@
 function onSubmit(e) {
   e.preventDefault();
 
-  document.getElementById("submit-button").style.display = "none";
-  document.getElementById("loading-indicator").style.display = "inherit";
-
   const name = e.target.elements.name.value;
   const email = e.target.elements.email.value;
 
